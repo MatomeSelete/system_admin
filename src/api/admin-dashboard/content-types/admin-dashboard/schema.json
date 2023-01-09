@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admin_dashboards",
+  "info": {
+    "singularName": "admin-dashboard",
+    "pluralName": "admin-dashboards",
+    "displayName": "Admin_Dashboard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Profile": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::login.login",
+      "mappedBy": "admin_dashboard"
+    }
+  }
+}
